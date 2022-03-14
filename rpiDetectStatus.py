@@ -34,9 +34,9 @@ if __name__ == '__main__':
         try:
             numberOfMessages = checkForMessages()
             if numberOfMessages > 0:
-                GPIO.output(switchControlPin, GPIO.HIGH)
+                GPIO.output(switchControlPin,GPIO.HIGH)
             else:
-                GPIO.output(switchControlPin, GPIO.LOW)
+                GPIO.output(switchControlPin,GPIO.LOW)
             time.sleep(timeDelaySec)
         except:
             break
